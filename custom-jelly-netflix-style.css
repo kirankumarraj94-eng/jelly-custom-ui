@@ -1,0 +1,65 @@
+/* ================================================================================ */
+
+/* ==========================================
+   FIX JELLYFIN SHELF CHEVRON ALIGNMENT
+   ========================================== */
+
+.verticalSection h2 {
+    display: flex !important;
+    align-items: center !important;
+    width: fit-content !important;
+    line-height: 1.2 !important;
+    gap: 6px !important;
+}
+
+.verticalSection h2 a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    position: relative !important;
+    top: -1px !important;
+}
+
+/* Align the actual chevron icon */
+.verticalSection h2 a svg {
+    display: block !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+    .verticalSection h2 {
+        font-size: 1.15em !important;
+        gap: 5px !important;
+    }
+
+    .verticalSection h2 a svg {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+/* Restore Netflix-style bold shelf headings */
+
+.verticalSection h2 {
+    font-size: 1.4em !important;
+    font-weight: 700 !important;
+    color: #e5e5e5 !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.2 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .verticalSection h2 {
+        font-size: 1.15em !important;
+        font-weight: 700 !important;
+        color: #e5e5e5 !important;
+    }
+}
+
+/* ================================================================================ */

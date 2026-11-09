@@ -1,0 +1,29 @@
+/* ================================================================================ */
+
+/* FORCE HIDE JELLYFIN ENHANCED SIDEBAR BUTTONS */
+#jellyfinEnhancedSettingsLink, 
+.jellyfinEnhancedSettingsLink,
+[id*="jellyfinEnhanced"],
+[class*="jellyfinEnhanced"] { 
+    display: none !important; 
+}
+
+/* FORCE HIDE PLAYER & MENU OVERLAYS */
+#enhancedSettingsBtn, 
+.enhancedSettingsBtn,
+button[title*="Jellyfin Enhanced"],
+a[href*="jellyfin-enhanced"],
+div[data-history*="jellyfin-enhanced"] { 
+    display: none !important; 
+}
+
+/* BLOCKS MOUSE INTERACTIONS WITH ACCIDENTALLY LOADED FLUID WRAPPERS */
+.jellyfin-enhanced-panel, 
+#jellyfin-enhanced-drawer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* ================================================================================ */
